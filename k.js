@@ -6,8 +6,8 @@ K.register(require('fastify-static'), {
   root: k.join(__dirname),
 })
 
-K.get('/', function (req, reply) {
-  return reply.sendFile('k.html')
+K.get('/', function (re, r) {
+  return r.sendFile('k.html')
 })
 
 const k_ = async () => {

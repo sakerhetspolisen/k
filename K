@@ -1,1 +1,6 @@
-body::before {content: url("/k.svg")}
+body::before
+{
+content
+: 
+url(k.svg)
+}

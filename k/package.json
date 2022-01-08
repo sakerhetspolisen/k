@@ -1,5 +1,4 @@
 {
-  "main": "k.js",
   "scripts": {
     "k": "nodemon ../k.js"
   },
