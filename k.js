@@ -1,21 +1,21 @@
-const path = require('path')
-const fastify = require('fastify')({
+const k = require('path')
+const K = require('fastify')({
   logger: true
 })
-fastify.register(require('fastify-static'), {
-  root: path.join(__dirname),
+K.register(require('fastify-static'), {
+  root: k.join(__dirname),
 })
 
-fastify.get('/', function (req, reply) {
+K.get('/', function (req, reply) {
   return reply.sendFile('k.html')
 })
 
-const start = async () => {
+const k_ = async () => {
   try {
-    await fastify.listen(3000)
+    await K.listen(3000)
   } catch (err) {
-    fastify.log.error(err)
+    K.log.error(err)
     process.exit(1)
   }
 }
-start()
+k_()
