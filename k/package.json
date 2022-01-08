@@ -1,0 +1,13 @@
+{
+  "main": "k.js",
+  "scripts": {
+    "k": "nodemon ../k.js"
+  },
+  "dependencies": {
+    "fastify": "^3.25.3",
+    "fastify-static": "^4.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
